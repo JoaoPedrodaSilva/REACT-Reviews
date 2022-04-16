@@ -1,0 +1,167 @@
+:root{
+  --color-primary: rgb(225, 243, 248);
+  --color-secondary: rgb(137, 202, 220);
+  --color-tertiary: white;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2rem;
+}
+
+#root {
+  width: 600px;
+  height: 600px;
+  background-color: var(--color-tertiary);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  margin: 2% auto;
+}
+.underline {
+  height: 0.25rem;
+  width: 10rem;
+  background: var(--color-secondary);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 3%;
+  margin-top: 3%;
+  border-radius: 2%;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  background-color: var(--color-primary);
+}
+  .img-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-top: 2%;
+  }
+      .img-container img {
+        object-fit: cover;
+        width: 100%;  
+        height: 100%;    
+        border-radius: 50%;
+      }
+      .quote-icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 4rem;
+        height: 4rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        background: var(--color-secondary);
+        color: var(--color-primary);
+      }
+
+  .author {
+    font-size: 2.5rem;
+    margin: 2% auto;
+  }
+
+  .job {
+    font-size: 2rem;
+    margin: 2% auto;
+  }
+
+  .text{
+    font-size: 1.5rem;
+    line-height: 2.55rem;
+    text-align: center;
+    min-height: 11rem;
+  }
+
+  .prev-btn,
+  .next-btn {
+    color: var(--color-secondary);
+    font-size: 4rem;
+    background: transparent;
+    border: none;
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+    .prev-btn:hover,
+    .next-btn:hover {
+      transform: scale(1.2);
+    }
+  .surprise-btn {
+    margin-top: 1rem;
+    background: var(--color-secondary);
+    color: var(--color-tertiary);
+    padding: 1rem;
+    letter-spacing: 0.5rem;
+    border-radius: 2%;
+    border: none;
+    cursor: pointer;
+  }  
+      .surprise-btn:hover {
+        transform: scale(1.05);
+      }
+  
+  
+
+
+@media (max-width: 1024px) {
+  #root {
+    width: 560px;
+    height: 560px;
+  }
+
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 768px) {
+  #root {
+    width: 420px;
+    height: 420px;
+  }
+}
+
+@media (max-width: 576px) {
+  #root {
+    width: 350px;
+    height: 350px;
+  }
+
+  html {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 425px) {
+  #root {
+    width: 240px;
+    height: 240px;
+  }
+
+  html {
+    font-size: 4px;
+  }
+}
